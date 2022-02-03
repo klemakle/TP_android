@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/roundcorner"
+        android:src="@drawable/ic_keyboard_backspace_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <FrameLayout
+        android:id="@+id/profile_user"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15">
+
+        <ImageView
+            android:id="@+id/photo_user"
+            android:layout_width="151dp"
+            android:layout_height="141dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/ic_user_round" />
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundcorner1"
+            android:src="@drawable/ic_mode_edit_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="180dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundcorner"
+            android:src="@drawable/ic_delete_black_36dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/detail_user"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#fefefe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/btn_prenom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_badge_black_24dp" />
+
+        <EditText
+            android:id="@+id/id_prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:ems="12"
+            android:inputType="textPersonName"
+            android:text="Kalidou DIA"
+            android:textColor="@color/black"
+            android:textSize="9pt" />
+
+        <ImageButton
+            android:id="@+id/btn_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="90dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_email_black_24dp" />
+
+        <EditText
+            android:id="@+id/id_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="95dp"
+            android:ems="12"
+            android:text="diakalidou@ept.sn" />
+
+
+        <ImageButton
+            android:id="@+id/btn_birthday"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/birthday"
+            android:layout_marginTop="170dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_cake_black_24dp" />
+
+        <EditText
+            android:id="@+id/id_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="175dp"
+            android:ems="12"
+            android:text="13/09/1998" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

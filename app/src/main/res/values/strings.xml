@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aethelwulf</string>
+    <string name="firstname">Prénom</string>
+    <string name="lastname">Nom</string>
+    <string name="email">Email</string>
+    <string name="genie">Genie</string>
+    <string name="chambre">Chambre</string>
+    <string name="password">Mot de passe</string>
+    <string name="birthday">Date de Naissance</string>
+
+</resources>
